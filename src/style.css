@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 5em;
+}
+
+form > div {
+    width: 20em;
+    height: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3em;
+}
+
+input {
+    margin-left: 10em;
+}
+
+.valid {
+    background-color: green;
+}
+
+.invalid {
+    background-color: red;
+}
+

@@ -7,7 +7,33 @@
     <title>Browser form</title>
 </head>
 <body>
-    test
+    <form action="post" novalidate>
+        <div>
+            <label for="email">E-mail address</label>
+            <input type="text" id="email" name="email">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" name="postcode">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="text" id="pass" name="pass">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+            <label for="checkpass">Confirm password</label>
+            <input type="text" id="checkpass" name="checkpass">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
-<script src="script.js"></script>
 </html>
