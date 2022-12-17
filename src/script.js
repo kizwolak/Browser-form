@@ -18,11 +18,20 @@ allInputs.forEach((input) => {
             const isValid = email.value.length === 0 || emailRegExp.test(email.value);
             if (!isValid) {
                 error.textContent = 'DOES NOT COMPUTE';
+                input.classList = 'invalid';
             } else {
                 error.textContent = '';
+                input.classList = 'valid';
             }
-            
         })        
+    }
+    if (input.id == 'country') {
+        console.log(input.minLength);
+        input.addEventListener('input', () => {
+            if (input.value.length < input.minLength || input.value.length > input.maxLength) {
+                error.textContent = 'COUNTRY NAME TOO LONG. OR TOO SHORT...'
+            }
+        });
     }
 });
 
